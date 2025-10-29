@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --primary-bg-color: #F8F5EE; /* Warm cream/light beige */
+  --secondary-bg-color: #EFEBE0; /* Slightly darker cream */
+  --text-color: #333;
+  --header-color: #2c3e50;
+  --accent-color: #8A5F6E; /* Muted maroon */
+  --light-accent-color: #5C7A7C; /* Muted teal */
+  --border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

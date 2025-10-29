@@ -1,0 +1,74 @@
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    background-color: var(--secondary-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.search-input-group {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 12px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px 0 0 5px;
+    font-size: 1.1em;
+    font-family: var(--font-sans);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: var(--light-accent-color);
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #744e5a;
+    /* Slightly darker maroon */
+    transform: translateY(-2px);
+}
+
+.search-options {
+    display: flex;
+    gap: 25px;
+    font-size: 1em;
+}
+
+.search-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.search-options label:hover {
+    color: var(--accent-color);
+}
+
+.search-options input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--accent-color);
+    /* Styles the radio button itself */
+}
